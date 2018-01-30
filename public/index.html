@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trip Planner</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="./style.css"></link>
+    <script src="./bundle.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img alt="logo" src="img/trip-planner.png" />
+        </div>
+
+        <nav>
+            <div class="nav-item">
+                <a href="#">Home</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">About</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <div id="searchBox">
+        <div id="search">
+            <h4>Search</h4>
+            <div class="dropdown">
+                <button class="dropbtn">Choose a Hotel</button>
+                <div class="dropdown-content">
+                    <a href="#" id="fourPoints">Four Points</a>
+                    <a href="#" id="hilton">Millenium Hilton</a>
+                    <a href="#" id="marriott">Marriott Downtown</a>
+                    <a href="#" id="conrad">Conrad New York</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Choose a Restaurant</button>
+                <div class="dropdown-content">
+                    <a href="#" id="fourPoints">Four Points</a>
+                    <a href="#" id="hilton">Millenium Hilton</a>
+                    <a href="#" id="marriott">Marriott Downtown</a>
+                    <a href="#" id="conrad">Conrad New York</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Choose a Activity</button>
+                <div class="dropdown-content">
+                    <a href="#" id="fourPoints">Four Points</a>
+                    <a href="#" id="hilton">Millenium Hilton</a>
+                    <a href="#" id="marriott">Marriott Downtown</a>
+                    <a href="#" id="conrad">Conrad New York</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <fiv id="itinerary">
+            <h4>Itinerary</h4>
+            <div id="myHotel">
+                <p>My Hotel:</p>
+            </div>
+            <div id="myRestaurant">
+                <p>My Restaurant:</p>
+            </div>
+            <div id="myActivity">
+                <p>My Activity:</p>
+            </div>
+        </fiv>
+    </div>
+    <div id="map"></div>
+</body>
+
+</html>

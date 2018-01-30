@@ -1,0 +1,16 @@
+{
+    "name": "trip_planner",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack -w"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "mapbox-gl": "^0.44.0",
+        "webpack": "^3.10.0"
+    }
+}

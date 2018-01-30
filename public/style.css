@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #C1B5AD;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    padding: 10px;
+    width: 50%;
+    color: #fff;
+    /* background-color: rgba(78, 111, 124, 0.9); */
+    background: linear-gradient(-45deg, rgba(109, 166, 219, 0.8), rgba(176, 209, 240, 0.8));
+    z-index: 2;
+    margin: 20px 0 0 20px;
+    border-radius: 10px;
+}
+
+header .logo {
+    flex-grow: 1;
+    padding-top: 0.25em;
+    padding-left: .5em;
+}
+
+header .logo img {
+    width: 9em;
+}
+
+header nav {
+    display: flex;
+    margin-top: .25em;
+}
+
+.nav-item {
+    height: 1.5em;
+    margin: 0 1.5em 0 0;
+}
+
+.nav-item a {
+    font-size: .8em;
+    color: rgb(227, 238, 245);
+    text-decoration: none;
+    padding: 5px;
+    transition: color 0.5s;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.nav-item a:hover {
+    color: rgb(255, 255, 255);
+}
+
+#searchBox {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(-45deg, rgba(109, 166, 219, 0.8), rgba(176, 209, 240, 0.8));
+    z-index: 2;
+    width: 300px;
+    height: auto;
+    margin: 0 20px 30px 0;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#searchBox h4 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1em;
+}
+
+#search,
+#itinerary {
+    padding: 10px 20px;
+}
+
+.dropbtn {
+    background-color: rgb(66, 85, 117);
+    color: white;
+    padding: .7em 1em;
+    font-size: .8em;
+    border: none;
+    cursor: pointer;
+    min-width: 17em;
+    text-align: left;
+    margin-top: 1em;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-size: .8em;
+    color: rgb(66, 85, 117);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(88, 110, 146);
+}
+
+#map {
+    height: 100vh;
+    width: 100vw;
+}
+
+#myHotel,
+#myRestaurant,
+#myActivity {
+    color: rgb(66, 85, 117);
+    font-size: .9em;
+}
+
+@media only screen and (max-width:830px) {
+    header nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    #searchBox {
+        width: 360px;
+    }
+}
